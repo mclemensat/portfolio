@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 h2 {
-  font-family: "Proza Libre", sans-serif;
+  font-family: 'League Gothic', sans-serif;
   text-align: center;
-  font-size: xx-large;
+  font-size: 3rem;
   margin-top: 35px;
   margin-bottom: 25px;
 }

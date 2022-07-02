@@ -4,14 +4,14 @@ export default function Header() {
   return (
     <div className="mb-16">
       <div className="bg-gray-100">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <div className="py-24 text-center">
+          <div className="mb-10 mx-auto">
+            <h1 className="mb-6 font-sans text-[#D44D5C] text-6xl font-bold leading-none tracking-tight text-gray-900 mx-auto">
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
                   fill="currentColor"
-                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-gray-400 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                  className="absolute top-4 left-4 z-0 hidden w-32 -mt-8 -ml-20 text-gray-400 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
                 >
                   <defs>
                     <pattern
@@ -30,11 +30,12 @@ export default function Header() {
                     height="24"
                   />
                 </svg>
-                <span className="relative">Marie</span>
+                <span className="relative mr-20">Marie</span>
               </span>{" "}
-              Clémensat
-            </h2>
-            <p className="text-lg text-center text-gray-700">
+              <br></br>
+              <span className="ml-20">Clémensat</span>
+            </h1>
+            <p className="text-2xl text-center text-gray-700">
               Développeuse web
             </p>
           </div>
@@ -58,7 +59,7 @@ export default function Header() {
           >
             <div className="inline-block p-8">
               <i className="my-2 fa-solid fa-circle-info text-3xl text-blue-200 hover:text-blue-400"></i>
-              <p className="mx-4">A propos</p>
+              <p className="mx-4 text-lg">A propos</p>
             </div>
           </Link>
           <Link
@@ -69,7 +70,7 @@ export default function Header() {
           >
             <div className="inline-block p-8">
               <i className="my-2 fa-solid fa-book-open text-3xl text-blue-200 hover:text-blue-400"></i>
-              <p className="mx-4">Portfolio</p>
+              <p className="mx-4 text-lg">Portfolio</p>
             </div>
           </Link>
           <Link
@@ -80,7 +81,7 @@ export default function Header() {
           >
             <div className="inline-block p-8">
               <i class="my-2 fa-solid fa-code text-3xl text-blue-200 hover:text-blue-400"></i>
-              <p className="mx-4">Compétences</p>
+              <p className="mx-4 text-lg">Compétences</p>
             </div>
           </Link>
         </div>

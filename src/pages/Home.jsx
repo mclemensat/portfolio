@@ -13,19 +13,23 @@ export default function Home() {
         <Header />
       </div>
       <div className="mx-4">
-        <h2 id="about">A propos</h2>
+        <h2 id="about">Présentation</h2>
+        <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <About />
       </div>
       <div className="mx-4">
         <h2 id="portfolio">Portfolio</h2>
+        <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Portfolio />
       </div>
       <div className="mx-4">
         <h2 id="skills">Compétences</h2>
+        <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Skills />
       </div>
       <div className="mx-4">
         <h2 id="contact">Contact</h2>
+        <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Contact />
         {/* <Form /> */}
       </div>

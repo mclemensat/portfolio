@@ -1,7 +1,7 @@
 export default function Portfolio() {
   return (
     <>
-      <div className="flex flex-col sm:flex-row justify-center">
+      <div className="flex flex-col justify-center sm:flex-row">
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="max-w-sm rounded-lg bg-gray-800 flip-card-front">
