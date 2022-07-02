@@ -34,12 +34,12 @@ export default function Header() {
               </span>{" "}
               Clémensat
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-lg text-center text-gray-700">
               Développeuse web
             </p>
           </div>
-          <div className="flex items-center sm:justify-center">
-            <button className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+          <div className="flex justify-center">
+            <button className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 border rounded-lg shadow-md hover:bg-gray-200 focus:shadow-outline focus:outline-none">
               <Link to="contact" spy={true} smooth={true}>
                 Contact
               </Link>
@@ -50,19 +50,34 @@ export default function Header() {
       <div className="relative px-4 sm:px-0">
         <div className="absolute inset-0 bg-gray-100 h-1/2" />
         <div className="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
-          <Link className="cursor-pointer text-center" to="about" spy={true} smooth={true}>
+          <Link
+            className="cursor-pointer text-center"
+            to="about"
+            spy={true}
+            smooth={true}
+          >
             <div className="inline-block p-8">
               <i className="my-2 fa-solid fa-circle-info text-3xl text-blue-200 hover:text-blue-400"></i>
               <p className="mx-4">A propos</p>
             </div>
           </Link>
-          <Link className="cursor-pointer text-center" to="portfolio" spy={true} smooth={true}>
+          <Link
+            className="cursor-pointer text-center"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+          >
             <div className="inline-block p-8">
               <i className="my-2 fa-solid fa-book-open text-3xl text-blue-200 hover:text-blue-400"></i>
               <p className="mx-4">Portfolio</p>
             </div>
           </Link>
-          <Link className="cursor-pointer text-center" to="skills" spy={true} smooth={true}>
+          <Link
+            className="cursor-pointer text-center"
+            to="skills"
+            spy={true}
+            smooth={true}
+          >
             <div className="inline-block p-8">
               <i class="my-2 fa-solid fa-code text-3xl text-blue-200 hover:text-blue-400"></i>
               <p className="mx-4">Compétences</p>

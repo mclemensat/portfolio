@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  backface-visibility: hidden;
+  width: fit-content;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
