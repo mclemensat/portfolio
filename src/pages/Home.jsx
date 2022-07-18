@@ -9,15 +9,15 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className="">
-      <div className="mx-4">
+      <div className="mx-4 sm:mb-20">
         <Header />
       </div>
-      <div className="mx-4">
+      <div className="mx-4 sm:mb-20">
         <h2 id="about">Présentation</h2>
         <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <About />
       </div>
-      <div className="mx-4">
+      <div className="mx-4 sm:mb-20">
         <h2 id="portfolio">Portfolio</h2>
         <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Portfolio />
@@ -27,13 +27,13 @@ export default function Home() {
         <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Skills />
       </div> */}
-      <div className="mx-4">
+      <div className="mx-4 sm:mb-20">
         <h2 id="contact">Contact</h2>
         <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Contact />
         {/* <Form /> */}
       </div>
-      <div>
+      <div className="mt-20">
         <Footer />
       </div>
     </div>

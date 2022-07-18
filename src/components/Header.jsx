@@ -37,13 +37,13 @@ export default function Header() {
             </h1>
             <p className="text-2xl text-center">Développeuse web</p>
           </div>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <button className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide transition duration-200 border border-secondary rounded-lg shadow-md hover:bg-secondary hover:text-slate-100 focus:shadow-outline focus:outline-none">
               <Link to="contact" spy={true} smooth={true}>
                 Contact
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="relative px-4 sm:px-0">
@@ -67,19 +67,19 @@ export default function Header() {
             smooth={true}
           >
             <div className="inline-block p-8 hover:scale-105 duration-200">
-              <i className="my-2 fa-solid fa-book-open text-3xl text-secondary"></i>
+            <i class="my-2 fa-solid fa-code text-3xl text-secondary"></i>
               <p className="mx-4 text-lg">Portfolio</p>
             </div>
           </Link>
           <Link
             className="cursor-pointer text-center"
-            to="skills"
+            to="contact"
             spy={true}
             smooth={true}
           >
             <div className="inline-block p-8 hover:scale-105 duration-200">
-              <i class="my-2 fa-solid fa-code text-3xl text-secondary"></i>
-              <p className="mx-4 text-lg">Compétences</p>
+              <i class="my-2 fa-solid fa-address-card text-3xl text-secondary"></i>
+              <p className="mx-4 text-lg">Contact</p>
             </div>
           </Link>
         </div>
