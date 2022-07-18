@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #1D3C45;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #1d3c45;
 }
 
 h2 {
-  font-family: 'League Gothic', sans-serif;
+  font-family: "League Gothic", sans-serif;
   text-align: center;
   font-size: 3rem;
   margin-top: 35px;

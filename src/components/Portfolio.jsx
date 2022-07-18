@@ -1,7 +1,7 @@
 export default function Portfolio() {
   return (
     <>
-      <div className="flex flex-col justify-center sm:flex-row">
+      <div className="flex flex-col items-center ml-24 lg:flex-row lg:justify-center lg:ml-10">
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="max-w-sm rounded-xl bg-tertiary border-[3px] border-secondary flip-card-front">
@@ -68,7 +68,7 @@ export default function Portfolio() {
                   MySQL
                 </li>
                 <li className="mb-2 border rounded-xl mx-26 text-slate-100 bg-secondary">
-                  Tailwind
+                  TailwindCSS
                 </li>
               </ul>
             </div>
@@ -84,7 +84,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="flip-card -mr-12">
+        <div className="flip-card">
           <div className="flip-card-inner">
             <div className="max-w-sm rounded-xl bg-tertiary border-[3px] border-secondary flip-card-front">
               <h3 className="my-6 flex justify-center">
