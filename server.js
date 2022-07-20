@@ -1,58 +1,57 @@
-const AdminJS = require("adminjs");
-const AdminJSExpress = require("@adminjs/express");
-const { Sequelize, DataTypes } = require("sequelize");
-
 const express = require("express");
+const router = express.Router();
+const cors = require("cors");
+const nodemailer = require("nodemailer");
+
 const app = express();
 const port = 5000;
+app.use(cors());
+app.use(express.json());
+app.use("/", router);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/users", (req, res) => {
-  res.send([{ name: "vins" }, { name: "marie" }]);
+const contactEmail = nodemailer.createTransport({
+  host: "localhost",
+  port: 1025,
+  secure: false,
+});
+
+contactEmail.verify((error) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Ready to Send");
+  }
+});
+
+router.post("/contact", (req, res) => {
+  const firstname = req.body.firstname;
+  const lastname = req.body.lastname;
+  const email = req.body.email;
+  const message = req.body.message;
+  const mail = {
+    from: email,
+    to: "marieclemensat@wanadoo.fr",
+    subject: "Contact Form Submission",
+    html: `
+    <h3>Firstname: ${firstname}</h3>
+    <h3>Lastname: ${lastname}</h3>
+    <p>Email: ${email}</p>
+    <text>Message: ${message}</text>
+        `,
+  };
+  contactEmail.sendMail(mail, (error) => {
+    if (error) {
+      res.json({ status: "fail" });
+    } else {
+      res.json({ status: "success" });
+    }
+  });
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Server is listening on port ${port}`);
 });
-
-const adminJs = new AdminJS({
-  databases: [],
-  rootPath: "/admin",
-});
-
-const router = AdminJSExpress.buildRouter(adminJs);
-app.use(adminJs.options.rootPath, router);
-app.listen(8080, () =>
-  console.log("AdminJS is running under localhost:8080/admin")
-);
-
-const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
-  {
-    dialect: "mysql",
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-  }
-);
-
-const Users = sequelize.define(
-  "users",
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      autoIncrement: true,
-      primaryKey: true,
-    },
-    username: { type: DataTypes.STRING, required: true },
-    password: { type: String, required: true },
-    role: { type: String, enum: ["admin", "member"], required: true },
-  },
-  { timestamps: false }
-);
-
-module.exports = Users;
