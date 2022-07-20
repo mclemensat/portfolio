@@ -23,7 +23,7 @@ contactEmail.verify((error) => {
   if (error) {
     console.log(error);
   } else {
-    console.log("Ready to Send");
+    console.log("Ready to send an email");
   }
 });
 
@@ -37,10 +37,9 @@ router.post("/contact", (req, res) => {
     to: "marieclemensat@wanadoo.fr",
     subject: "Contact Form Submission",
     html: `
-    <h3>Firstname: ${firstname}</h3>
-    <h3>Lastname: ${lastname}</h3>
-    <p>Email: ${email}</p>
-    <text>Message: ${message}</text>
+    <h3>Nom : ${firstname} ${lastname}</h3>
+    <h4>Email : ${email}</h4>
+    <p>${message}</p>
         `,
   };
   contactEmail.sendMail(mail, (error) => {
