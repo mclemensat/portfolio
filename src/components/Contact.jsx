@@ -16,9 +16,9 @@ export default function Contact() {
       </div>
       <div className="flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-around">
         <div className="flex flex-col">
-          <button className="mb-2" onClick={handleClick}>
-            {" "}
-            Envoyer un mail <i class="fa-solid fa-envelope"></i>
+          <p>Envoyer un mail</p>
+          <button className="text-4xl mb-4" onClick={handleClick}>
+            <i class="fa-solid fa-envelope"></i>
           </button>
           {isShowContactForm ? <ContactForm onClick={handleClick} /> : ""}
         </div>
