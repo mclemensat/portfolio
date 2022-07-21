@@ -10,7 +10,7 @@ export default function Contact() {
 
   return (
     <div className="text-2xl font-light">
-      <div className="text-2xl mb-14 sm:mx-12">
+      <div className="text-2xl mb-20 sm:mx-12">
         <p>Marie Clémensat</p>
         <p>marieclemensat@wanadoo.fr</p>
         <p>Bordeaux</p>
