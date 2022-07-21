@@ -1,4 +1,13 @@
+import { useState } from "react";
+import ContactForm from "./ContactForm";
+
 export default function Contact() {
+  const [isShowContactForm, setIsShowContactForm] = useState(false);
+
+  const handleClick = () => {
+    setIsShowContactForm(!isShowContactForm);
+  };
+
   return (
     <div className="text-2xl font-light">
       <div className="text-2xl mb-10">
@@ -7,10 +16,11 @@ export default function Contact() {
       </div>
       <div className="flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-around">
         <div className="flex flex-col">
-          <p className="mb-2"> Envoyer un mail </p>
-          <a href="mailto:marieclemensat@wanadoo.fr" className="text-4xl ml-14 mb-4">
+          <p>Envoyer un mail</p>
+          <button className="text-4xl mb-4" onClick={handleClick}>
             <i class="fa-solid fa-envelope"></i>
-          </a>
+          </button>
+          {isShowContactForm ? <ContactForm onClick={handleClick} /> : ""}
         </div>
         <div className="flex flex-col">
           <p className="mb-2"> Linkedin </p>

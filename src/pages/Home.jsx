@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 // import Skills from "../components/Skills";
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -31,7 +31,7 @@ export default function Home() {
         <h2 id="contact">Contact</h2>
         <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-black border border-black"></hr>
         <Contact />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
       <div className="mt-20">
         <Footer />
