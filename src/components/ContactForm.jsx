@@ -19,7 +19,7 @@ export default function ContactForm({ onClick }) {
       email: email.value,
       message: message.value,
     };
-
+    
     axios({
       method: "POST",
       url: "http://localhost:5000/contact",
@@ -40,12 +40,12 @@ export default function ContactForm({ onClick }) {
       <div
         id="authentication-modal"
         tabIndex="-1"
-        className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center flex"
+        className="backdrop-blur-[3px] overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 justify-center items-center flex"
         aria-modal="true"
         role="dialog"
       >
         <div className="relative p-4 w-full max-w-md">
-          <div className="relative bg-secondary rounded-lg shadow-lg">
+          <div className="relative bg-tertiary border border-[#D48166] border-2 rounded-lg shadow-lg">
             <button
               type="button"
               className="absolute top-3 right-2.5 text-[#1d3c45] hover:bg-gray-600 hover:text-gray-900 rounded-lg text-sm p-1.5"
@@ -68,7 +68,7 @@ export default function ContactForm({ onClick }) {
             </button>
 
             <div className="py-6 px-6 lg:px-8">
-              <h3 className="mb-4 text-xl font-medium text-primary text-center">
+              <h3 className="mb-4 text-xl font-medium text-secondary text-center">
                 Me contacter
               </h3>
 
@@ -76,7 +76,7 @@ export default function ContactForm({ onClick }) {
                 <div>
                   <label
                     htmlFor="firstname"
-                    className="block mb-2 text-sm font-medium text-primary"
+                    className="block mb-2 text-sm font-medium text-secondary ml-[5px]"
                   >
                     Prénom :
                   </label>
@@ -85,14 +85,14 @@ export default function ContactForm({ onClick }) {
                     name="firstname"
                     id="firstname"
                     placeholder="Jane"
-                    className="bg-primary border border-gray-300 text-sm rounded-lg focus:outline-none block w-full p-2.5"
+                    className="bg-white text-black border border-gray-300 text-sm rounded-lg focus:outline-none focus:bg-white block w-full p-2.5"
                     required
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="lastname"
-                    className="block mb-2 text-sm font-medium text-primary"
+                    className="block mb-2 text-sm font-medium text-secondary ml-[5px]"
                   >
                     Nom :
                   </label>
@@ -101,14 +101,14 @@ export default function ContactForm({ onClick }) {
                     name="lastname"
                     id="lastname"
                     placeholder="Doe"
-                    className="bg-primary border border-gray-300 text-sm rounded-lg focus:outline-none block w-full p-2.5"
+                    className="bg-white text-black border border-gray-300 text-sm rounded-lg focus:outline-none focus:bg-white block w-full p-2.5"
                     required
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm font-medium text-primary"
+                    className="block mb-2 text-sm font-medium text-secondary ml-[5px]"
                   >
                     Email :
                   </label>
@@ -117,14 +117,14 @@ export default function ContactForm({ onClick }) {
                     name="email"
                     id="email"
                     placeholder="jane.doe@exemple.fr"
-                    className="bg-primary border border-gray-300 text-sm rounded-lg focus:outline-none block w-full p-2.5"
+                    className="bg-white> text-black border border-gray-300 text-sm rounded-lg focus:outline-none focus:bg-white block w-full p-2.5"
                     required
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block mb-2 text-sm font-medium text-primary"
+                    className="block mb-2 text-sm font-medium text-secondary ml-[5px]"
                   >
                     Message :
                   </label>
@@ -133,7 +133,7 @@ export default function ContactForm({ onClick }) {
                     name="message"
                     id="message"
                     placeholder="Votre message ici..."
-                    className="bg-primary border border-gray-300 text-sm rounded-lg focus:outline-none block w-full p-2.5"
+                    className="bg-white text-black border border-gray-300 text-sm rounded-lg focus:outline-none focus:bg-white block w-full p-2.5"
                     required
                   />
                 </div>

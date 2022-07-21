@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-primary">
+    <div className="bg-[#D48166]">
       <Home />
     </div>
   );

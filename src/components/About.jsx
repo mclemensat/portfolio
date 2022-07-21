@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <p className="mx-28 text-xl font-light">
+      <p className="mx-36 text-2xl font-light">
         Anciennement juriste en droit des affaires, je suis aujourd'hui
         développeuse web. Lorem, ipsum dolor sit amet consectetur adipisicing
         elit. Impedit, eligendi? Ipsum, soluta maxime cumque minima ut doloribus
