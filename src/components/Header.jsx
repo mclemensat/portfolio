@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 export default function Header() {
   return (
     <div className="mb-16">
-      <div className="bg-tertiary">
-        <div className="py-24 text-center">
+      <div className="bg-tertiary rounded-lg -mt-2">
+        <div className="py-24 text-[#1d3c45] text-center">
           <div className="mb-10 mx-auto">
             <h1 className="mb-6 font-sans text-6xl font-bold leading-none tracking-tight mx-auto">
               <span className="relative inline-block">
@@ -35,51 +35,44 @@ export default function Header() {
               <br></br>
               <span className="ml-12">Clémensat</span>
             </h1>
-            <p className="text-2xl text-center">Développeuse web</p>
+            <p className="text-3xl text-center">Développeuse web</p>
           </div>
-          {/* <div className="flex justify-center">
-            <button className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide transition duration-200 border border-secondary rounded-lg shadow-md hover:bg-secondary hover:text-slate-100 focus:shadow-outline focus:outline-none">
-              <Link to="contact" spy={true} smooth={true}>
-                Contact
-              </Link>
-            </button>
-          </div> */}
         </div>
       </div>
-      <div className="relative px-4 sm:px-0">
-        <div className="absolute inset-0 h-1/2" />
-        <div className="relative grid mx-auto overflow-hidden bg-slate-50 divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md hover:">
+      <div className="relative px-4 sm:px-0 -mt-16">
+        <div className="absolute inset-0 h-1/2"/>
+        <div className="relative grid mx-auto overflow-hidden bg-slate-50 divide-y divide-[#1d3c45] border border-[#1d3c45] rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
           <Link
-            className="cursor-pointer text-center"
+            className="cursor-pointer text-center bg-primary"
             to="about"
             spy={true}
             smooth={true}
           >
             <div className="inline-block p-8 hover:scale-105 duration-200">
               <i className="my-2 fa-solid fa-circle-info text-3xl text-secondary"></i>
-              <p className="mx-4 text-lg">A propos</p>
+              <p className="mx-4 text-lg text-secondary">A propos</p>
             </div>
           </Link>
           <Link
-            className="cursor-pointer text-center"
+            className="cursor-pointer text-center bg-primary"
             to="portfolio"
             spy={true}
             smooth={true}
           >
             <div className="inline-block p-8 hover:scale-105 duration-200">
-            <i class="my-2 fa-solid fa-code text-3xl text-secondary"></i>
-              <p className="mx-4 text-lg">Portfolio</p>
+              <i className="my-2 fa-solid fa-code text-3xl text-secondary"></i>
+              <p className="mx-4 text-lg text-secondary">Portfolio</p>
             </div>
           </Link>
           <Link
-            className="cursor-pointer text-center"
+            className="cursor-pointer text-center bg-primary"
             to="contact"
             spy={true}
             smooth={true}
           >
             <div className="inline-block p-8 hover:scale-105 duration-200">
-              <i class="my-2 fa-solid fa-address-card text-3xl text-secondary"></i>
-              <p className="mx-4 text-lg">Contact</p>
+              <i className="my-2 fa-solid fa-address-card text-3xl text-secondary"></i>
+              <p className="mx-4 text-lg text-secondary">Contact</p>
             </div>
           </Link>
         </div>

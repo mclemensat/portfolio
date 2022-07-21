@@ -4,7 +4,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  color: #1d3c45;
+  color: #FFF1E1;
 }
 
 h2 {
@@ -13,6 +13,7 @@ h2 {
   font-size: 3rem;
   margin-top: 35px;
   margin-bottom: 25px;
+  color:#FFF1E1;
 }
 
 .flip-card {

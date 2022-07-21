@@ -10,15 +10,16 @@ export default function Contact() {
 
   return (
     <div className="text-2xl font-light">
-      <div className="text-2xl mb-10">
+      <div className="text-2xl mb-20 sm:mx-12">
         <p>Marie Clémensat</p>
+        <p>marieclemensat@wanadoo.fr</p>
         <p>Bordeaux</p>
       </div>
       <div className="flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-around">
         <div className="flex flex-col">
-          <p>Envoyer un mail</p>
+          <p>Me contacter</p>
           <button className="text-4xl mb-4" onClick={handleClick}>
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
           </button>
           {isShowContactForm ? <ContactForm onClick={handleClick} /> : ""}
         </div>
@@ -39,7 +40,7 @@ export default function Contact() {
             target="_blank"
             className="text-4xl ml-4 mb-4"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
