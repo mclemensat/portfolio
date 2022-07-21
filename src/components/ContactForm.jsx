@@ -1,7 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
 
+import SentMessageModal from "./SentMessageModal";
+
 export default function ContactForm({ onClick }) {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClick = () => setShowModal(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,9 +26,11 @@ export default function ContactForm({ onClick }) {
       data: formValues,
     }).then((response) => {
       if (response.data.status === "success") {
-        alert("Message sent");
+        setShowModal(true);
+        e.target.reset();
       } else if (response.data.status === "fail") {
-        alert("Message failed to send");
+        setShowModal(false)
+        alert("Erreur");
       }
     });
   };
@@ -53,7 +60,7 @@ export default function ContactForm({ onClick }) {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                   clipRule="evenodd"
                 ></path>
@@ -142,6 +149,7 @@ export default function ContactForm({ onClick }) {
               </form>
             </div>
           </div>
+          <SentMessageModal onClick={handleClick} visible={showModal} />
         </div>
       </div>
     </>
