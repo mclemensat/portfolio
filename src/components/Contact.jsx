@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ContactForm from "./ContactForm";
 
+import cv from "../assets/cv.pdf";
+
 export default function Contact() {
   const [isShowContactForm, setIsShowContactForm] = useState(false);
 
@@ -14,14 +16,28 @@ export default function Contact() {
         <p>Marie Clémensat</p>
         <p>marieclemensat@wanadoo.fr</p>
         <p>Bordeaux</p>
+        {/* <div className="flex flex-col">
+          <a
+            href={cv}
+            target="_blank"
+            className="text-2xl"
+          > Mon CV
+          </a>
+        </div> */}
       </div>
       <div className="flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-around">
         <div className="flex flex-col">
-          <p>Me contacter</p>
+          <p className="mb-2"> Me contacter </p>
           <button className="text-4xl mb-4" onClick={handleClick}>
             <i className="fa-solid fa-envelope"></i>
           </button>
           {isShowContactForm ? <ContactForm onClick={handleClick} /> : ""}
+        </div>
+        <div className="flex flex-col">
+          <p className="mb-2"> Mon CV </p>
+          <a href={cv} target="_blank" className="text-4xl ml-6 mb-4">
+            <i className="fa-solid fa-file-lines"></i>
+          </a>
         </div>
         <div className="flex flex-col">
           <p className="mb-2"> Linkedin </p>

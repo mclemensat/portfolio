@@ -19,7 +19,7 @@ export default function ContactForm({ onClick }) {
       email: email.value,
       message: message.value,
     };
-    
+
     axios({
       method: "POST",
       url: "http://localhost:5000/contact",
@@ -29,7 +29,7 @@ export default function ContactForm({ onClick }) {
         setShowModal(true);
         e.target.reset();
       } else if (response.data.status === "fail") {
-        setShowModal(false)
+        setShowModal(false);
         alert("Erreur");
       }
     });
@@ -48,13 +48,13 @@ export default function ContactForm({ onClick }) {
           <div className="relative bg-tertiary border border-[#D48166] border-2 rounded-lg shadow-lg">
             <button
               type="button"
-              className="absolute top-3 right-2.5 text-[#1d3c45] hover:bg-gray-600 hover:text-gray-900 rounded-lg text-sm p-1.5"
+              className="absolute top-3 right-2.5 text-secondary hover:bg-primary hover:text-[#1d3c45] hover:scale-105 duration-200 rounded-lg text-sm p-1.5"
               data-modal-toggle="authentication-modal"
               onClick={onClick}
             >
               <svg
                 aria-hidden="true"
-                className="w-5 h-5"
+                className="w-6 h-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

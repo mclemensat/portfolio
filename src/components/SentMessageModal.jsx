@@ -6,9 +6,9 @@ export default function SentMessageModal({ visible, onClick }) {
   if (!visible) return null;
   return (
     <div className="bg-slate-800 bg-opacity-50 border rounded-lg flex justify-center items-center absolute top-0 right-0 bottom-0 left-0">
-      <div className="bg-white w-30 h-50 md:w-[70%] py-14 rounded-md text-center">
-        <p className="text-xl mb-6 mt-2 font-bold text-[#1d3c45]">
-          Bien reçu, merci ! 👋🏼
+      <div className="bg-white w-[200px] h-50 md:w-[70%] py-14 rounded-md text-center">
+        <p className="text-xl mb-6 mt-2 font-bold text-[#1d3c45] mx-4">
+          Bien reçu, merci pour votre message ! 👋🏼
         </p>
 
         <button

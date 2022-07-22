@@ -2,14 +2,13 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 // import Skills from "../components/Skills";
-// import ContactForm from "../components/ContactForm";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="mx-12 sm:mb-20">
+    <>
+      <div className="mx-0 sm:mx-12 sm:mb-20">
         <Header />
       </div>
       <div className="mx-4 sm:mb-20">
@@ -31,11 +30,10 @@ export default function Home() {
         <h2 id="contact">Contact</h2>
         <hr className="-mt-2 mb-12 mx-[200px] sm:mx-[650px] bg-[#FFF1E1] border border-[#FFF1E1]"></hr>
         <Contact />
-        {/* <ContactForm /> */}
       </div>
       <div className="mt-20">
         <Footer />
       </div>
-    </div>
+    </>
   );
 }
