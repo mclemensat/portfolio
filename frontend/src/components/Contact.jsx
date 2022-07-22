@@ -14,7 +14,9 @@ export default function Contact() {
     <div className="text-2xl font-light">
       <div className="text-2xl mb-20 sm:mx-12">
         <p>Marie Clémensat</p>
-        <p>marieclemensat@wanadoo.fr</p>
+        <a href="mailto:marieclemensat@wanadoo.fr" className="text-2xl mb-4">
+          marieclemensat@wanadoo.fr{" "}
+        </a>
         <p>Bordeaux</p>
         {/* <div className="flex flex-col">
           <a
