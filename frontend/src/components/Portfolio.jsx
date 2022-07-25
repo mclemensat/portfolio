@@ -5,17 +5,16 @@ export default function Portfolio() {
         <div className="flip-card">
           <div className="flip-card-inner ml-4">
             <div className="max-w-sm rounded-2xl bg-[#FFDEBE] border-[3px] border-[#8e5440] flip-card-front">
-              <h3 className="mt-6 mb-4 flex justify-center">
+              <h3 className="mt-10 mb-6 flex justify-center">
                 <img
                   src="../src/assets/logo-bastide.png"
                   alt="logo-bastide"
-                  className="w-36"
+                  className="w-36 drop-shadow-lg"
                 />{" "}
               </h3>
               <div className="text-[#373A36]">
                 <div className="text-lg">
-                  <p className="mb-2">Projet 1 : Wild Code School</p>
-                  <p className="mb-2 px-8">
+                  <p className="mb-4 px-8">
                     Site touristique sur le quartier Bastide à Bordeaux
                   </p>
                 </div>
@@ -50,7 +49,7 @@ export default function Portfolio() {
         <div className="flip-card">
           <div className="flip-card-inner ml-4">
             <div className="max-w-sm rounded-2xl bg-[#FFDEBE] border-[3px] border-[#8e5440] flip-card-front">
-              <h3 className="mt-6 mb-2 flex justify-center">
+              <h3 className="mt-10 mb-4 flex justify-center">
                 <img
                   src="../src/assets/logo-mealme.png"
                   alt="logo-mealme"
@@ -59,8 +58,7 @@ export default function Portfolio() {
               </h3>
               <div className="text-[#373A36]">
                 <div className="text-lg">
-                  <p className="mb-2">Projet 2 : Wild Code School</p>
-                  <p className="mb-2 px-8">
+                  <p className="mb-4 px-8">
                     Générateur de recettes de cuisine basé sur les ingrédients
                   </p>
                 </div>
@@ -95,17 +93,16 @@ export default function Portfolio() {
         <div className="flip-card">
           <div className="flip-card-inner ml-4">
             <div className="max-w-sm rounded-2xl bg-[#FFDEBE] border-[3px] border-[#8e5440] flip-card-front">
-              <h3 className="mt-6 mb-4 flex justify-center">
+              <h3 className="mt-10 mb-6 flex justify-center">
                 <img
                   src="../src/assets/logo-kk.png"
                   alt="logo-kk"
-                  className="w-36 bg-[#58C5D9]"
+                  className="w-36 drop-shadow-lg"
                 />{" "}
               </h3>
               <div className="text-[#373A36]">
                 <div className="text-lg">
-                  <p className="mb-2">Projet 3 : Wild Code School</p>
-                  <p className="mb-2 px-8">
+                  <p className="mb-4 px-8">
                     Site d'identification et d'évaluation des risques cyber
                     d'une entreprise
                   </p>
