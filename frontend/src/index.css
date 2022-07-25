@@ -47,3 +47,19 @@ h2 {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.content-div:hover {
+  background-color: rgba(126, 213, 111, 0.801);
+}
+
+.content-div:hover .fd-cl {
+  opacity: 0.25;
+}
+.content-div:hover .fd-sh {
+  opacity: 1;
+}
