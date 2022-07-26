@@ -10,41 +10,23 @@ body {
 h2 {
   font-family: "League Gothic", sans-serif;
   text-align: center;
-  font-size: 3rem;
   margin-top: 35px;
   margin-bottom: 25px;
   color: #fff1e1;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 400px;
-  height: 400px;
-  perspective: 1000px;
+.content-div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.content-div:hover {
+  background-color:brown;
 }
 
-.flip-card-inner {
-  position: relative;
-  width: 90%;
-  height: 90%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.content-div:hover .fd-cl {
+  opacity: 0.25;
 }
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  backface-visibility: hidden;
-  width: 100%;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
+.content-div:hover .fd-sh {
+  opacity: 1;
 }
