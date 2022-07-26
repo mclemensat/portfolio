@@ -1,16 +1,16 @@
 export default function Portfolio() {
   return (
     <>
-      <div className="container grid justify-items-center grid-cols-3 gap-2 mx-auto px-44">
+      <div className="container grid justify-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 mx-auto sm:px-36 lg:px-12 xl:px-44">
         <div className="w-full cursor-pointer">
-          <div className="shadow-lg group container rounded-md bg-white flex justify-center items-center mx-auto content-div">
+          <div className="shadow-lg group container rounded-lg bg-white flex justify-center items-center mx-auto content-div">
             <div>
               <a
                 href="https://projet1-wcs-bastide.vercel.app/"
                 target="_blank"
                 className="py-0 px-0"
               >
-                <div className="py-2 px-2 w-[450px] bg-white rounded-md group-hover:opacity-25">
+                <div className="py-2 px-2 lg:w-[350px] xl:w-[450px] bg-white rounded-lg group-hover:opacity-25">
                   <img
                     src="../src/assets/bastide.png"
                     alt="apercu-site-bastide"
@@ -51,15 +51,15 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="w-full cursor-pointer col-span-2 ml-16 mb-1">
-          <div className="shadow-lg group container rounded-md bg-white flex justify-center items-center mx-auto content-div">
+        <div className="w-full cursor-pointer xl:col-span-2 xl:ml-16 xl:mb-2">
+          <div className="shadow-lg group container rounded-lg bg-white flex justify-center items-center mx-auto content-div">
             <div>
               <a
                 href="https://mealme.bordeaux-1.wilders.dev/"
                 target="_blank"
                 className="py-0 px-0"
               >
-                <div className="py-2 px-2 bg-white rounded-md group-hover:opacity-25">
+                <div className="py-2 px-2 bg-white rounded-lg group-hover:opacity-25">
                   <img
                     src="../src/assets/mealme.png"
                     alt="apercu-site-mealme"
@@ -103,11 +103,11 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="w-full cursor-pointer -mt-52">
+        <div className="w-full cursor-pointer lg:-mt-[50px] xl:-mt-[220px]">
           <div className="group container rounded-md flex justify-center items-center mx-auto content-div">
             <div>
               <a href="" target="_blank" className="py-0 px-0">
-                <div className="py-0 px-0 w-[350px] rounded-md group-hover:opacity-25">
+                <div className="py-0 px-0 sm:w-[200px] lg:w-[280px] xl:w-[350px] rounded-md group-hover:opacity-25">
                   <img
                     src="../src/assets/greenta.png"
                     alt="apercu-site-greenta"
@@ -147,7 +147,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="w-full cursor-pointer ml-4">
+        <div className="w-full cursor-pointer xl:mr-4 lg:mt-2">
           <div className="shadow-lg group container rounded-md bg-white flex justify-center items-center mx-auto content-div">
             <div>
               <a
@@ -155,7 +155,7 @@ export default function Portfolio() {
                 target="_blank"
                 className="py-0 px-0"
               >
-                <div className="py-2 px-2 w-[400px] bg-white rounded-md group-hover:opacity-25">
+                <div className="py-2 px-2 lg:w-[340px] xl:w-[400px] bg-white rounded-md group-hover:opacity-25">
                   <img
                     src="../src/assets/knockknock.png"
                     alt="apercu-site-knockknock"
@@ -200,11 +200,11 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="w-full cursor-pointer ml-8 -mr-6">
+        <div className="w-full cursor-pointer xl:ml-12 lg:col-start-2 xl:col-start-3 lg:-mt-[210px] xl:mt-2">
           <div className="shadow-lg group container rounded-md bg-white flex justify-center items-center mx-auto content-div">
             <div>
               <a href="" target="_blank" className="py-0 px-0">
-                <div className="py-2 px-2 w-[400px] bg-white rounded-md group-hover:opacity-25">
+                <div className="py-2 px-2 lg:w-[340px] xl:w-[400px] bg-white rounded-md group-hover:opacity-25">
                   <img
                     src="../src/assets/libside.png"
                     alt="apercu-site-libside"
